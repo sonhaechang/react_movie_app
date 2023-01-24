@@ -1,0 +1,39 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.pageItem {
+    margin: 0px 5px;
+}
+
+.pageLink {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0008fc;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
+}
+
+.active  {
+    z-index: 3;
+    color: #fff;
+    pointer-events: none;
+    background-color: #0008fc;
+    border-color: #0008fc;
+}
+
+.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
