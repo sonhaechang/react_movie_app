@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styles from './Pagination.module.css'
 
 function Pagination({ totalPageNum, currentPageNum, pageChange }) {
