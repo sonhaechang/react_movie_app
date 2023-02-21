@@ -1,0 +1,47 @@
+.container {
+    height: 100%;
+    padding: 170px 0px 130px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchForm {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.searchInput {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.searchSelect {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem 2rem 0.75rem 0.77rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.searchSubmit {
+    display: block;
+    width: 100%;
+    color: #fff;
+    border: 1px solid #0008fc;
+    background-color: #0008fc;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}

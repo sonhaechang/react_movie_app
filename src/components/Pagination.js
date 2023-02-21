@@ -16,8 +16,7 @@ function Pagination({ totalPageNum, currentPageNum, pageChange }) {
             <ul className={styles.pagination}>
                 {/* Array(totalPage).fill().map((_, i) */}
                 <li key='-1' className={styles.pageItem}>
-                    <Link
-                        to={`/?page=${currentPageNum-1}`}
+                    <span
                         className={
                             `
                                 ${styles.pageLink}
@@ -27,14 +26,11 @@ function Pagination({ totalPageNum, currentPageNum, pageChange }) {
                         onClick={() => pageChange(currentPageNum-1)}
                     >
                         &laquo;
-                    </Link>
+                    </span>
                 </li>
                 {totalPage.slice(firstNum, lastNum).map((i) => (
-                    <li 
-                        key={i} 
-                        className={styles.pageItem}>
-                        <Link
-                            to={`/?page=${i}`}
+                    <li key={i} className={styles.pageItem}>
+                        <span
                             className={
                                 `
                                     ${styles.pageLink} 
@@ -44,12 +40,11 @@ function Pagination({ totalPageNum, currentPageNum, pageChange }) {
                             onClick={() => pageChange(i)}
                         >
                             {i}
-                        </Link>
+                        </span>
                     </li>
                 ))}
                 <li key='-2' className={styles.pageItem}>
-                    <Link
-                        to={`/?page=${currentPageNum+1}`}
+                    <span
                         className={
                             `
                                 ${styles.pageLink}
@@ -58,8 +53,8 @@ function Pagination({ totalPageNum, currentPageNum, pageChange }) {
                         }
                         onClick={() => pageChange(currentPageNum+1)}
                     >
-                        &raquo;
-                    </Link>
+                       &raquo; 
+                    </span>
                 </li>
             </ul>
         </nav>
